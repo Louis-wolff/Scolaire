@@ -6,6 +6,11 @@ Ici ce trouve tout les projets web que l'on a effectué au cours de ma scolarit�
 Tout d'abord ce trouve le premier dossier "Web - Semestre1" , en HTML, CSS, et JS pur. <br>
 Par la suite ce trouve le dossier "Laravel - Semestre3" , en PHP et donc Laravel. <br>
 
+Puis, il a le dossier "Node -Semestre4" , en JavaScript. Nous avons eu le temps de tout voir pour ce module-ci. <br>
+Pour le démarrer, effectuez la commande: <br>
+node nody <br>
+
+
 Et enfin, très récent mais mentionable, le dossier "React - Semestre'" , il est important de noter que ce semestre 4 est toujours en cours, et donc nous n'avons pas encore eu le temps de voir la majeure partie. Nous en sommes au début des cours de React, mais je peux vous montrer les débuts tout de même.<br>
 
 ### Merci d'avoir pris le temps de lire!
