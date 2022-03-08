@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/style3.css">
+		<title>Jeux de Soc' &amp; thés</title>
+	</head>
+	<body>
+		<header>
+			<h1>Jeux de Soc' &amp; thés</h1>
+			<img src="img/labyrinthe.png" alt="Logo du site">
+		</header>
+
+		<main>
+			<nav>
+				<ul>
+					<li class="current-menu"><a href="index.html">Accueil</a></li>
+					<li><a href="jeux.html">Les jeux</a></li>
+					<li><a href="thes.html">Les thés</a></li>
+					<li><a href="reservation.html">Réservation</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="jeuxBG.html">JeuxBGG</a></li>
+				</ul>			
+			</nav>
+			<section>
+				<header>
+					<h2>Réserver votre place</h2>
+				</header>
+				<ul>
+					<li>Vous voulez rencontrer d'autres joueurs accros au(x) même(s) jeu(x) ?</li>
+					<li>Vous voulez découvrir de nouveaux jeux avec vos amis?</li>
+				</ul>
+				<p>Réservez votre table ou rejoignez un groupe en vous inscrivant ci-dessous :</p>
+				<form action="#" method="post">
+					<label for="prenom">Prénom</label><input type="text" id="prenom" autofocus required><br>
+					<label for="nom">Nom</label><input type="text" id="nom" required><br>
+					<label for="mail">Adresse mail</label><input type="email" id="mail" required><br>
+					<fieldset>
+						<legend>Je serai</legend>
+						<input type="radio" id="seul" name="typeCreneau"><label for="seul">seul</label><br>
+						<input type="radio" id="groupe" name="typeCreneau"><label for="groupe">en groupe</label>
+						<label for="nombrePersonnes">Nous serons</label><input type="number" id="nombrePersonnes" value="3" min="1" max="7"> personnes.
+					</fieldset>
+					<fieldset>
+						<legend>Je viendrai</legend>
+						<label for="date">Le</label><input type="date" id="date" required><br>
+						<label for="heure">à</label><input type="time" id="heure" required><br>
+					</fieldset>
+					<label for="message">Commentaire</label><textarea id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Valider mon inscription">
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>Jeux de Soc' &amp; thés</p>
+			<p>72 Route du Rhin - 67411 Illkirch Cedex</p>
+		</footer>
+	</body>
+</html>

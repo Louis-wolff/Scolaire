@@ -1,0 +1,459 @@
+body {
+	background-color: #0f4749;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/************************
+ * Headers and titles
+ ************************/
+
+h1 {
+	color: #eba509;
+	font-size: 3rem;
+	font-style: italic;
+	margin: 0;
+	text-shadow: 0 0 10px black;
+}
+
+h2 {
+	border-bottom: 1px dotted black;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 1.5rem;
+	padding: .5rem;
+	text-align: center;
+}
+
+h4 {
+	margin-bottom: 1rem;
+	margin-top: 0;
+	text-decoration: underline;
+}
+
+
+/************************
+ * Global
+ ************************/
+
+main {
+	background-color: #fafafa;
+	box-shadow: 0 0 10px 0 black;
+	display: flex;
+	flex-direction: row;
+}
+
+section,
+aside {
+	flex-grow: 1;
+	padding: 2rem;
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+p:first-of-type {
+	margin-top: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+iframe {
+	border: 0;
+	height: 450px;
+	width: 100%;
+}
+
+
+/************************
+ * Listes
+ ************************/
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	margin: 2rem 0;
+	padding: 0;
+}
+
+li {
+	background-color: #8a69d0;
+	border-radius: 2rem;
+	box-shadow: 5px 5px 10px 0 black;
+	color: #fafafa;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	padding: 1rem 1.5rem;
+	text-align: center;
+}
+
+
+/************************
+ * Headers
+ ************************/
+
+body > header {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	padding: 1rem;
+	padding-bottom: 1.5rem;
+}
+
+body > header img {
+	height: 128px;
+	margin-right: 2rem;
+}
+
+
+/************************
+ * Navigation
+ ************************/
+
+nav {
+	background-color: #8a69d0;
+	flex-basis: 10rem;
+	flex-shrink: 0;
+	margin-right: 1rem;
+}
+
+nav ul {
+	flex-direction: column;
+	margin: 0;
+}
+
+nav li {
+	align-content: center;
+	align-items: center;
+	background-color: #e609eb;
+	border-radius: 0 1rem 1rem 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	margin: .5rem 0;
+	padding: 0;
+	text-align: right;
+	transition-duration: 300ms;
+	transition-property: background-color margin-right;
+}
+
+nav a {
+	color: #fafafa;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 1rem;
+	padding: .5rem 0;
+	text-decoration: none;
+}
+
+nav li:hover,
+nav li.current-menu {
+	background-color: #eba509;
+}
+
+nav li:hover {
+	margin-right: -1rem;
+}
+
+nav li:hover a,
+nav li.current-menu a {
+	color: black;
+}
+
+nav li.current-menu {
+	background-color: #eba509;
+}
+
+nav li.current-menu::before {
+	content: url(../img/rubikscube.png);
+	display: inline-block;
+	position: relative;
+	right: .5rem;
+}
+
+
+/************************
+ * Accueil
+ ************************/
+
+main span:nth-child(1) {
+	color: #e609eb;
+}
+
+main span:nth-child(2) {
+	color: #8a69d0;
+}
+
+main span:nth-child(3) {
+	color: #eba509;
+}
+
+/************************
+ * Tables
+ ************************/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	border: 1px solid black;
+	padding: .5rem;
+	text-align: center;
+}
+
+table th {
+	background-color: #8a69d0;
+	color: #fafafa;
+}
+
+
+/************************
+ * Forms
+ ************************/
+
+form {
+	background-color: #ddd;
+	padding: 1.5rem;
+}
+
+form label {
+	display: inline-block;
+	width: 7rem;
+}
+
+form input {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+form fieldset {
+	border-left: 0;
+	border-right: 0;
+	margin: 1rem 0;
+}
+
+form fieldset legend {
+	font-weight: bold;
+}
+
+form fieldset input[type=radio] {
+	margin-right: .5rem;
+}
+
+form textarea {
+	display: block;
+	margin: .5rem 0;
+}
+
+
+/************************
+ * Jeux
+ ************************/
+
+article.game {
+	border: 1px dashed black;
+	border-radius: 1.5rem;
+	display: flex;
+	flex-flow: column;
+	margin: 0 0 1rem 0;
+}
+
+article.game:hover {
+	background-color: #ddd;
+}
+
+article.game h3 {
+	background-color: #eba509;
+	border-bottom: 1px solid black;
+	border-radius: 1.5rem 1.5rem 0 0;
+	box-shadow: 0 5px 5px -2px black;
+	font-weight: bold;
+}
+
+article.game section,
+article.game aside {
+	padding-bottom: 1rem;
+	padding-top: 0;
+}
+
+article.game section:last-of-type {
+	padding-bottom: 2rem;
+}
+
+article.game figure {
+	align-self: center;
+	/*width: 50%;*/
+}
+
+article.game figure img {
+	max-width: 15rem;
+	width: 100%;
+}
+
+article.game p {
+	font-style: italic;
+	margin-bottom: .5rem;
+	margin-top: 0;
+}
+
+
+/************************
+ * Thés
+ ************************/
+
+section.thes {
+	align-items: baseline;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+section.thes header {
+	flex-basis: 100%;
+}
+
+article.the {
+	border: 1px dashed black;
+	margin: .5rem;
+	max-width: 15rem;
+}
+
+article.the:hover {
+	border: 1px solid black;
+	box-shadow: 0 0 10px 1px black;
+}
+
+article.the h3 {
+	background-color: #e609eb;
+	color: #fafafa;
+}
+
+article.the figure {
+	max-width: 15rem;
+}
+
+article.the figure img {
+	width: 100%;
+}
+
+article.the p {
+	padding: 0 .5rem;
+}
+
+article.the footer {
+	background: #ddd;
+	color: black;
+	padding: 1rem;
+}
+
+/************************
+ * Footer
+ ************************/
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+footer p {
+	color: #fafafa;
+	margin: 0;
+}
+
+
+/************************
+ * Écrans moyens
+ ************************/
+
+@media all and (max-width: 1024px) { /*Tous les medias ayant une largeur < 1024px*/
+	main {
+		flex-direction: column;
+	}
+
+	nav {
+		flex-basis: auto; /*recherche la taille principale de l'élément et définit 
+		la taille. */
+		margin-right: 0;
+	}
+
+	nav ul {
+		align-items: stretch; /* Les éléments flexibles sont étirés afin que la 
+		taille de la boîte de marge sur l'axe en bloc est la même que celle de 
+		la ligne sur laquelle l'élément se trouve, tout en respectant les 
+		contraintes de hauteur et de largeur.*/
+		flex-direction: row;
+	}
+
+	nav li {
+		border-radius: 0;
+		flex-basis: auto; /*Ne change pas grand chose :recherche la taille 
+		principale de l'élément et définit la taille. */
+		flex-grow: 1;
+		justify-content: center; /* La propriété CSS justify-content indique la 
+		façon dont l'espace doit être réparti entre et autour des éléments selon 
+		l'axe principal d'un conteneur flexible */
+		margin: 0;
+	}
+
+	nav li:last-child {
+		margin-right: 0;
+	}
+}
+
+
+/************************
+ * Petits écrans
+ ************************/
+
+@media all and (max-width: 600px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	section ul {
+		flex-direction: column;
+	}
+
+	section li {
+		margin-right: 0;
+	}
+}
+
+/* ***** Pour BGG **** */
+
+#bgg-found > article{
+	display: flex;
+	border-radius: 1rem 1rem 1rem 1rem;
+	background-color: #ddd;
+	margin: 4px;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding: 1rem;
+	justify-content: space-around;
+}
+
+
+section #bgg-found{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
